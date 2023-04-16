@@ -31,27 +31,42 @@ read -p " [*] Elige una opcion: " opc
 				;;
 			6 )	echo
 				echo " ============================================="
-				echo " 1º Ver como seria el Hash de una Contraseña"" |"
+				echo " 1º Extraer Hash del Handshakes (.cap = hash)""|"
 				echo " ---------------------------------------------"
-				echo " 2º Identificar un Hash""                      |"
+				echo " 2º Ver como seria el Hash de una Contraseña"" |"
 				echo " ---------------------------------------------"
-				echo " 3º Volver al Menu""                           |"
+				echo " 3º Identificar un Hash""                      |"
+				echo " ---------------------------------------------"
+				echo " 4º Volver al Menu""                           |"
 				echo " ============================================="
 				echo
 				echo
 				read -p " [*] Elige una opcion: " opc1
 					case $opc1 in
 							1 ) echo
+								read -p " [*] Pon la ruta del Handshake (/home/Descktop/handshake_TPLINKE3B.cap): " hand
+								primera=`echo $hand | head -c 1`
+								coma="'"
+								if [ $primera = $coma ]
+									then
+										hand=`echo $hand | cut -c 2- | rev | cut -c2- | rev`
+								fi
+								sudo aircrack-ng -J preHash $hand
+								sudo hccap2john preHash.hccap > Hash
+								sudo rm -r preHash.hccap
+								sudo mv Hash requisitos/resultados
+								;;
+							2 ) echo
 								read -p "[*] Escribe la contraseña que quieres convertir en hash: " pass
 								echo
 								sudo curl cli.fyi/hash/$pass
 								;;
-							2 ) echo
+							3 ) echo
 								read -p "[*] Escribe o pega el Hash que quieres escanear: " hash
 								echo
 								sudo hash-identifier $hash
 								;;
-							3 ) bash the_cracker.sh
+							4 ) bash the_cracker.sh
 								;;
 							* )	echo
 								echo "$RRPLY No es una opcion valida"

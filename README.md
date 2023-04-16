@@ -26,7 +26,7 @@
 
 :ballot_box_with_check: **Crear diccionarios Personalizado** --> [**A personas y combinaciones:** *Este apartado te da varias opciones para crear un Diccionario personalizado al Objetivo, puedes crear un Dicc dirigido a una persona combinando (Nombre, Apellidos, Nickname, Birthdate, Padres, Hijos, Mascotas, etc.) o combinar letras y números o el abecedario o combinar palabras.*]
 
-:ballot_box_with_check: **Utilidades** --> [**Hash:** *Identificar un Hash y ver como sería el Hash de una contrasena en varios formatos*]
+:ballot_box_with_check: **Utilidades** --> [**Hash:** *Extraer el Hash del Handshakes (.cap = hash), Identificar un Hash y ver como sería el Hash de una contrasena en varios formatos*]
 
 ## 🛠 Instalar Herramienta 🛠
 
@@ -49,6 +49,8 @@
 ## 🎲 Tener en Cuenta 🎲
 
 **[1]** Una vez crackeada la contraseña por el momento no se almacena en ninguna parte, por eso os recomiendo copiarla y almacenarla.
+
+**[2]** En el apartado ([3]Desencriptar un Handshakes/Hash) si no contamos con el Handshake podeis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Wifi_Troll](https://github.com/XDeadHackerX/Wifi_Troll) en la cual tiene un apartado especifico para extraer de forma totalmente automatizada y muy rapida el Handshake, este se queda almacenado en una carpeta con la MAC de la Red Wifi dentro de la tool, para que solo tengamos que arrastrarla hasta la terminal donde se este ejecuntando [The_Cracker](https://github.com/XDeadHackerX/The_Cracker).
 
 ## 🔎 Versiones 🔎
 
