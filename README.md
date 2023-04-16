@@ -2,15 +2,17 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"> <img width="95px" alt="Version" src="https://img.shields.io/badge/version-1.0-yellow.svg?style=flat"/> <img width="92px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=The_Cracker&left_color=gray&right_color=yellow"/></p>
+<p align="center"> <img width="90px" alt="Version" src="https://img.shields.io/badge/version-1.0-yellow.svg?style=flat"/> <img width="87px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=The_Cracker&left_color=gray&right_color=yellow"/></p>
 
 [![The-Cracker-1-0.png](https://i.postimg.cc/SNhCbRXV/The-Cracker-1-0.png)](https://postimg.cc/LhxnzH3Z)
 
 ---
 
-*Herramienta dirigida exclusivamente al uso de **Fuerza Bruta** y **Ataques de Diccionario** a varios tipos de Objetivos. La necesidad de crear esta Tool es para que los expertos en ciberseguridad puedan evaluar de forma rápida y automatizada la robustez de las contraseñas usadas en sus Sistemas.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+*Herramienta dirigida exclusivamente al uso de **Fuerza Bruta** y **Ataques de Diccionario** a varios tipos de Objetivos.* 
 
-<p align="center"><img src=https://i.postimg.cc/9XwTRSw4/password3.gif width="350px"/></p>
+*La necesidad de crear esta Tool es para que los expertos en ciberseguridad puedan evaluar de forma rápida y automatizada la robustez de las contraseñas usadas en sus Sistemas.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+
+<p align="center"><img src=https://i.postimg.cc/9XwTRSw4/password3.gif width="300px"/></p>
 
 ---
 
@@ -26,7 +28,7 @@
 
 :ballot_box_with_check: **Crear diccionarios Personalizado** --> [**A personas y combinaciones:** *Este apartado te da varias opciones para crear un Diccionario personalizado al Objetivo, puedes crear un Dicc dirigido a una persona combinando (Nombre, Apellidos, Nickname, Birthdate, Padres, Hijos, Mascotas, etc.) o combinar letras y números o el abecedario o combinar palabras.*]
 
-:ballot_box_with_check: **Utilidades** --> [**Hash:** *Extraer el Hash del Handshakes (.cap = hash), Identificar un Hash y ver como sería el Hash de una contrasena en varios formatos*]
+:ballot_box_with_check: **Utilidades** --> [**Hash:** *Extraer el Hash del Handshakes (.cap = hash), Identificar un Hash y ver como sería el Hash de una contraseña en varios formatos*]
 
 ## 🛠 Instalar Herramienta 🛠
 
@@ -50,7 +52,7 @@
 
 **[1]** Una vez crackeada la contraseña por el momento no se almacena en ninguna parte, por eso os recomiendo copiarla y almacenarla.
 
-**[2]** En el apartado ([3]Desencriptar un Handshakes/Hash) si no contamos con el Handshake podeis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Wifi_Troll](https://github.com/XDeadHackerX/Wifi_Troll) en la cual tiene un apartado especifico para extraer de forma totalmente automatizada y muy rapida el Handshake, este se queda almacenado en una carpeta con la MAC de la Red Wifi dentro de la tool, para que solo tengamos que arrastrarla hasta la terminal donde se este ejecuntando [The_Cracker](https://github.com/XDeadHackerX/The_Cracker).
+**[2]** En el apartado ([3]Desencriptar un Handshakes/Hash) si no contamos con el Handshake podéis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Wifi_Troll](https://github.com/XDeadHackerX/Wifi_Troll) en la cual tiene un apartado específico para extraer de forma totalmente automatizada y muy rápida el Handshake, este se queda almacenado en una carpeta con la MAC de la Red Wifi dentro de la tool, para que solo tengamos que arrastrarla hasta la terminal donde se esté ejecutando [The_Cracker](https://github.com/XDeadHackerX/The_Cracker).
 
 ## 🔎 Versiones 🔎
 
