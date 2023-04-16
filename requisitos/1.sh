@@ -3,7 +3,7 @@
 source requisitos/0.sh
 
 Title
-echo " [1] Desencriptar un Fichero (office .rar .zip .pdf)"
+echo " [1] Desencriptar un fileero (office .rar .zip .pdf)"
 echo
 echo " ==================================="
 echo " 1º Desencriptar un .ZIP""           |"
@@ -12,7 +12,7 @@ echo " 2º Desencriptar un .RAR""           |"
 echo " -----------------------------------"
 echo " 3º Desencriptar un .PDF""           |"
 echo " -----------------------------------"
-echo " 4º Desencriptar un Fichero Office"" |"
+echo " 4º Desencriptar un fileero Office"" |"
 echo " -----------------------------------"
 echo " 5º Volver al menu""                 |"
 echo " ==================================="
@@ -39,16 +39,16 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo zip2john $fich > requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo zip2john $file > requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
 								echo "↓ La Contraseña se mostrará así-->  :contraseña:  ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo
@@ -63,17 +63,17 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo zip2john $fich > requisitos/resultados/hash.txt
-								sudo john --wordlist=$dicc requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo zip2john $file > requisitos/resultados/pass.txt
+								sudo john --wordlist=$dicc requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
 								echo "↓ La Contraseña se mostrará así-->  :contraseña:  ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo
@@ -101,16 +101,16 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo rar2john $fich > requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo rar2john $file > requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
-								echo "↓ La Contraseña se mostrará así-->  :contraseña:  ↓"
+								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo
@@ -125,17 +125,17 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo rar2john $fich > requisitos/resultados/hash.txt
-								sudo john --wordlist=$dicc requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo rar2john $file > requisitos/resultados/pass.txt
+								sudo john --wordlist=$dicc requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
-								echo "↓ La Contraseña se mostrará así-->  :contraseña:  ↓"
+								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo
@@ -163,16 +163,16 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo pdf2john $fich > requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo pdf2john $file > requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
 								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo
@@ -187,17 +187,17 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo pdf2john $fich > requisitos/resultados/hash.txt
-								sudo john --wordlist=$dicc requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo pdf2john $file > requisitos/resultados/pass.txt
+								sudo john --wordlist=$dicc requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
 								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo
@@ -217,7 +217,7 @@ read -p " [*] Elige una opcion: " opc1
 					case $opc5 in
 							1 ) echo
 								echo
-								read -p " [*] Pon la ruta del Fichero: " file
+								read -p " [*] Pon la ruta del fileero: " file
 								echo
 								echo "======================================================================================="
 								echo
@@ -225,22 +225,22 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo office2john $fich > requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo office2john $file > requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
 								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo
 								;;
 							2 )	echo
-								read -p " [*] Pon la ruta del Fichero: " file
+								read -p " [*] Pon la ruta del fileero: " file
 								read -p " [*] Pon la ruta del Diccionario: " dicc
 								echo
 								echo "======================================================================================="
@@ -249,17 +249,17 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich=`echo $file | cut -c 2- | rev | cut -c2- | rev`
+										file=`echo $file | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo office2john $fich > requisitos/resultados/hash.txt
-								sudo john --wordlist=$dicc requisitos/resultados/hash.txt
-								sudo john requisitos/resultados/hash.txt
+								sudo office2john $file > requisitos/resultados/pass.txt
+								sudo john --wordlist=$dicc requisitos/resultados/pass.txt
+								sudo john requisitos/resultados/pass.txt
 								echo
 								echo "---------------------------------------------------"
 								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
 								echo "---------------------------------------------------"
 								echo
-								sudo john requisitos/resultados/hash.txt --show
+								sudo john requisitos/resultados/pass.txt --show
 								echo
 								echo "======================================================================================="
 								echo

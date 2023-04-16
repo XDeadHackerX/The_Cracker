@@ -35,23 +35,23 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
+										dicc=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $hand | cut -c 2- | rev | cut -c2- | rev`
+										hand=`echo $hand | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo john $fich2
+								sudo john $hand
 								echo
-								clear
+								Title
 								echo "------------------------------------------"
-								echo "↓ Resultados-->"  `sudo aircrack-ng -J resultados/temp1 $fich2 | awk 'NF==6{print $3}'`" ↓"
+								echo "↓ Resultados-->"  `sudo aircrack-ng -J resultados/temp1 $hand | awk 'NF==6{print $3}'`" ↓"
 								echo "------------------------------------------"
 								echo
-								sudo aircrack-ng -J resultados/temp1 $fich2 | awk 'FNR>= 5{print}' | awk 'FNR<= 3{print}'
-								sudo aircrack-ng -J resultados/temp1 $fich2 | awk 'FNR>= 20{print}' 
+								sudo aircrack-ng -J resultados/temp1 $hand | awk 'FNR>= 5{print}' | awk 'FNR<= 3{print}'
+								sudo aircrack-ng -J resultados/temp1 $hand | awk 'FNR>= 20{print}' 
 								echo
-								echo "CONTRASEÑA: " `cat resultados/password.handshake.txt`
+								echo "CONTRASEÑA: " `john --show= $hand`
 								echo
 								echo "======================================================================================="
 								echo
@@ -67,23 +67,23 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
+										dicc=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $hand | cut -c 2- | rev | cut -c2- | rev`
+										hand=`echo $hand | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo aircrack-ng -w $fich1 $fich2 -l resultados/password.handshake.txt
+								sudo aircrack-ng -w $dicc $hand -l requisitos/resultados/password.handshake.txt
 								echo
-								clear
+								Title
 								echo "------------------------------------------"
-								echo "↓ Resultados-->"  `sudo aircrack-ng -J resultados/temp1 $fich2 | awk 'NF==6{print $3}'`" ↓"
+								echo "↓ Resultados-->"  `sudo aircrack-ng -J resultados/temp1 $hand | awk 'NF==6{print $3}'`" ↓"
 								echo "------------------------------------------"
 								echo
-								sudo aircrack-ng -J resultados/temp1 $fich2 | awk 'FNR>= 5{print}' | awk 'FNR<= 3{print}'
-								sudo aircrack-ng -J resultados/temp1 $fich2 | awk 'FNR>= 20{print}' 
+								sudo aircrack-ng -J resultados/temp1 $hand | awk 'FNR>= 5{print}' | awk 'FNR<= 3{print}'
+								sudo aircrack-ng -J resultados/temp1 $hand | awk 'FNR>= 20{print}' 
 								echo
-								echo "CONTRASEÑA: " `cat resultados/password.handshake.txt`
+								echo "CONTRASEÑA: " `cat requisitos/resultados/password.handshake.txt`
 								echo
 								echo "======================================================================================="
 								echo
@@ -111,20 +111,20 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
+										dicc=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $hash | cut -c 2- | rev | cut -c2- | rev`
+										hash=`echo $hash | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo john $fich2 
+								sudo john $hash 
 								echo
-								clear
-								echo "---------------------------------------------------"
-								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
-								echo "---------------------------------------------------"
+								Title
+								echo "----------------------------------------------------------"
+								echo "↓ La Contraseña se mostrará así--> Red_Wifi:contraseña:  ↓"
+								echo "----------------------------------------------------------"
 								echo
-								echo "CONTRASEÑA: " `john --show=$fich2`
+								echo "CONTRASEÑA: " `john --show= $hash`
 								echo
 								echo "======================================================================================="
 								echo
@@ -140,20 +140,20 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
+										dicc=`echo $dicc | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $hash | cut -c 2- | rev | cut -c2- | rev`
+										hash=`echo $hash | cut -c 2- | rev | cut -c2- | rev`
 								fi
-								sudo john --wordlist=$fich1 $fich2 
+								sudo john --wordlist=$dicc $hash 
 								echo
-								clear
-								echo "---------------------------------------------------"
-								echo "↓ La Contraseña se mostrará así-->  :contraseña   ↓"
-								echo "---------------------------------------------------"
+								Title
+								echo "----------------------------------------------------------"
+								echo "↓ La Contraseña se mostrará así--> Red_Wifi:contraseña:  ↓"
+								echo "----------------------------------------------------------"
 								echo
-								echo "CONTRASEÑA: " `john --show=$fich2`
+								echo "CONTRASEÑA: " `john --show= $hash`
 								echo
 								echo "======================================================================================="
 								echo
@@ -167,7 +167,7 @@ read -p " [*] Elige una opcion: " opc1
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
 				sleep 3
-				bash /requisitos/3.sh
+				bash requisitos/3.sh
 	esac
 echo
 echo " ==================="

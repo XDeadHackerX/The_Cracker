@@ -45,9 +45,9 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -s $puerto -l $usr -P $fich1 $Ip http-get $ruta -f -V -I
+                                sudo hydra -s $puerto -l $usr -P $dicc1 $Ip http-get $ruta -f -V -I
                                 ;;
                             2 )	echo
                                 read -p " [*] Pon la ruta del Diccionario del usuario (Ej: /home/root/dicc1.txt): " dicc1
@@ -59,13 +59,13 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
+										dicc2=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -s $puerto -L $fich1 -P $fich2 $Ip http-get $ruta -f -V -I
+                                sudo hydra -s $puerto -L $dicc1 -P $dicc2 $Ip http-get $ruta -f -V -I
                                 ;;
                             * )	echo
                                 echo "$RRPLY No es una opcion valida"
@@ -90,9 +90,9 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -s $puerto -l $usr -P $fich1 $Ip http-get $ruta -f -V -I
+                                sudo hydra -s $puerto -l $usr -P $dicc1 $Ip http-get $ruta -f -V -I
                                 ;;
                             2 )	read -p " [*] Escribe la ip (Ej: 192.168.1.10): " Ip
                                 read -p " [*] Escribe el puerto (Ej: 80): " puerto
@@ -105,13 +105,13 @@ read -p " [*] Elige una opcion: " opc1
 								coma="'"
 								if [ $primera = $coma ]
 									then
-										fich1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
+										dicc1=`echo $dicc1 | cut -c 2- | rev | cut -c2- | rev`
 								fi
 								if [ $segunda = $coma ]
 									then
-										fich2=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
+										dicc2=`echo $dicc2 | cut -c 2- | rev | cut -c2- | rev`
 								fi
-                                sudo hydra -s $puerto -L $fich1 -P $fich2 $Ip http-get $ruta -f -V -I
+                                sudo hydra -s $puerto -L $dicc1 -P $dicc2 $Ip http-get $ruta -f -V -I
                                 ;;
                             * )	echo
                                 echo "$RRPLY No es una opcion valida"
