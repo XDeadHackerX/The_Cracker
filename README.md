@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"> <img width="89px" alt="Version" src="https://img.shields.io/badge/version-1.0-yellow.svg?style=flat"/> <img width="87px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=The_Cracker&left_color=gray&right_color=yellow"/></p>
+<p align="center"> <img width="90px" alt="Version" src="https://img.shields.io/badge/version-1.0-yellow.svg?style=flat"/> <img width="87px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=The_Cracker&left_color=gray&right_color=yellow"/></p>
 
 [![The-Cracker-1-0.png](https://i.postimg.cc/SNhCbRXV/The-Cracker-1-0.png)](https://postimg.cc/LhxnzH3Z)
 
@@ -12,7 +12,7 @@
 
 *La necesidad de crear esta Tool es para que los expertos en ciberseguridad puedan evaluar de forma rápida y automatizada la robustez de las contraseñas usadas en sus Sistemas.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
 
-<p align="center"><img src=https://i.postimg.cc/9XwTRSw4/password3.gif width="300px"/></p>
+<p align="center"><img src=https://i.postimg.cc/9XwTRSw4/password3.gif width="350px"/></p>
 
 ---
 
