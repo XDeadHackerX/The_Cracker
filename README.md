@@ -8,7 +8,7 @@
 
 ---
 
-*Herramienta dirigida exclusivamente al uso de **Fuerza Bruta** y **Ataques de Diccionario** a varios tipos de Objetivos. La necesidad de crear esta Tool es para que los expertos en ciberseguridad puedan evaluar de forma rápida y automatizada la robustez de las contraseñas usadas en sus Sistemas* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+*Herramienta dirigida exclusivamente al uso de **Fuerza Bruta** y **Ataques de Diccionario** a varios tipos de Objetivos. La necesidad de crear esta Tool es para que los expertos en ciberseguridad puedan evaluar de forma rápida y automatizada la robustez de las contraseñas usadas en sus Sistemas.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
 
 <p align="center"><img src=https://i.postimg.cc/9XwTRSw4/password3.gif width="350px"/></p>
 
@@ -54,9 +54,14 @@
 
 **(v1.0)** ---> Versión Original.
 
-## 🎬 Video 🎬
+## 🎬 Videos 🎬
 
-<p align="center"><a href="https://asciinema.org/a/549547" target="_blank"><img src="https://asciinema.org/a/549547.svg" width="700px" /></a><p>
+
+### ZIP
+<p align="center"><a href="https://asciinema.org/a/577876" target="_blank"><img src="https://asciinema.org/a/577876.svg" width="700px" /></a><p>
+
+### PDF
+<p align="center"><a href="https://asciinema.org/a/577885" target="_blank"><img src="https://asciinema.org/a/577885.svg" width="700px" /></a><p>
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
