@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"> <img width="90px" alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?style=flat"/> <img width="88px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=The_Cracker&left_color=gray&right_color=blue"/></p>
+<p align="center"> <img width="90px" alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?style=flat"/> <img width="84px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=The_Cracker&left_color=gray&right_color=blue"/></p>
 
 [![The-Cracker-1-0.png](https://i.postimg.cc/SNhCbRXV/The-Cracker-1-0.png)](https://postimg.cc/LhxnzH3Z)
 
