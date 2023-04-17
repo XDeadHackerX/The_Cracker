@@ -54,6 +54,8 @@
 
 **[2]** En el apartado ([3]Desencriptar un Handshakes/Hash) si no contamos con el Handshake podéis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Wifi_Troll](https://github.com/XDeadHackerX/Wifi_Troll) en la cual tiene un apartado específico para extraer de forma totalmente automatizada y muy rápida el Handshake, este se queda almacenado en una carpeta con la MAC de la Red Wifi dentro de la tool, para que solo tengamos que arrastrarla hasta la terminal donde se esté ejecutando [The_Cracker](https://github.com/XDeadHackerX/The_Cracker).
 
+**[3]** En caso de que tengas descargada una versión más antigua, te aconsejo borrarla y volver a instalar la herramienta (+requisitos) para solucionar errores y obtener mejoras, que hacen que la herramienta sea mucho mejor que las versiones anteriores.
+
 ## 🔎 Versiones 🔎
 
 **(v1.0)** ---> Versión Original.
