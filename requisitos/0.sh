@@ -10,7 +10,7 @@ function Title {
 	echo "           TTT   hh   hh  eeeee _______  CCCCC  rr      aaa aa  ccccc kk  kk  eeeee rr     "
 	echo "                            凸 ( ಠ ͜ʖ ಠ )凸"
 	echo "                         __________________________________________________"					
-	echo "                          ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+	echo "                          ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 	echo "      -------------------------------------------------------------------------------------------"
 	echo "      Cualquier acción y o actividad relacionada con 𝕋𝕙𝕖_ℂ𝕣𝕒𝕔𝕜𝕖𝕣 es únicamente su responsabilidad"
 	echo "      -------------------------------------------------------------------------------------------"

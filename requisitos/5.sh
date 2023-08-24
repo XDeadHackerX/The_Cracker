@@ -26,21 +26,21 @@ read -p " [*] Elige una opcion: " opc1
 				read -p " [*] Escribe el nombre (Posteriormente volvera a preguntarlo, escribelo igual en ambos sitios): " name
 				read -p " [*] Rellena del siguiente formulario las preguntas que sepas (Enter): " enter
 				echo
-				var=$(echo $name | perl -ne 'print lc')
+				var=$(echo "$name" | perl -ne 'print lc')
 				cd requisitos/cupp
 				sudo python3 cupp.py -i
 				cd ..
-				sudo mv cupp/$var.txt resultados/
 				cd ..
-				b=`cat requisitos/resultados/$var.txt | wc -c`
+				find requisitos/cupp -type f -name "*.txt" -exec mv -t requisitos/resultados {} +
+				b=$(cat "requisitos/resultados/$var.txt" | wc -c)
 				Title
 				echo " [*] Informacion sobre su Diccionario"
 				echo
 				echo " ========================================================"
 				echo " * Nombre: $var.txt"
 				echo " * Ruta: The_Cracker/requisitos/resultados/$var.txt"
-				echo " * Numero de lineas: `cat requisitos/resultados/$var.txt | wc -l`"
-				echo " * Peso del Archivo: `echo "scale=2; $b/1024/1024" | bc -l` Mb  /  $b Byte"
+				echo " * Numero de lineas: $(cat "requisitos/resultados/$var.txt" | wc -l)"
+				echo " * Peso del Archivo: $(echo "scale=2; $b/1024/1024" | bc -l) Mb  /  $b Byte"
 				echo " ========================================================"
 				;;
 			2 ) echo
