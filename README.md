@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-1.0-yellow.svg?style=for-the-badge"/></p>
+<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-1.1-yellow.svg?style=for-the-badge"/></p>
 
 [![The-Cracker-1-0.png](https://i.postimg.cc/SNhCbRXV/The-Cracker-1-0.png)](https://postimg.cc/LhxnzH3Z)
 
@@ -56,13 +56,6 @@
 
 **[3]** En caso de que tengas descargada una versión más antigua, te aconsejo borrarla y volver a instalar la herramienta (+requisitos) para solucionar errores y obtener mejoras, que hacen que la herramienta sea mucho mejor que las versiones anteriores.
 
-## 🔎 Versiones 🔎
-
-<details>
-  <summary>[ v1.0 ]</summary>
-  <p align="justify">[#] Versión Original.</p>
-</details>
-
 ## 🎬 Videos 🎬
 
 
@@ -71,6 +64,17 @@
 
 ### PDF
 <p align="center"><a href="https://asciinema.org/a/577885" target="_blank"><img src="https://asciinema.org/a/577885.svg" width="700px" /></a><p>
+
+## 🔎 Versiones 🔎
+
+<details>
+  <summary>[ v1.0 ]</summary>
+  <p align="justify">[#] Versión Original.</p>
+</details>
+<details>
+  <summary>[ v1.1 ]</summary>
+  <p align="justify">[#] Solucionado el error dentro del Apartado ([5] Crear diccionarios Personalizado) la opción (1º Diccionario personalizado a una Persona) cuando ponías 2 palabras separadas por un espacio en la casilla de "name" el programa generaba el diccionario, pero no te lo guardaba en la ruta "The_Cracker/requisitos/resultados/dicc.txt" entonces el usuario no lo encontraba. Se ha mejorado, reparado y pulido la mayoría de aspectos del Apartado ([2] Desencriptar un Protocolo Online y Local (ftp, ssh, ...)), ahora te da la opción de hacer un escaneo automático dentro de tu red local en busca de dispositivos con el servicio seleccionado abierto y se solucionó el error al querer hacer un Ataque de diccionario al usuario y a la contraseña. Se ha mejorado el funcionamiento del apartado ([4] Desencriptar el Login de una IP Local (192.168.1.1:80))</p>
+</details>
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
