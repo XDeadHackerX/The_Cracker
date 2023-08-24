@@ -4,7 +4,7 @@
 
 <p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-1.1-yellow.svg?style=for-the-badge"/></p>
 
-[![The-Cracker-1-0.png](https://i.postimg.cc/SNhCbRXV/The-Cracker-1-0.png)](https://postimg.cc/LhxnzH3Z)
+[![The-Cracker-1-1.png](https://i.postimg.cc/257nMdSR/The-Cracker-1-1.png)](https://postimg.cc/7CbCT2zm)
 
 ---
 
