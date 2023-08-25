@@ -18,7 +18,7 @@ read -p " [*] Elige una opcion: " opc1
 	case $opc1 in
 			1 ) echo
                 read -p " [*] Escribe la Ip de Red + la Mascara (Ej: 192.168.1.0/24 o 128.0.0.0/16): " IpRed
-                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 80,443 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;"
+                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 80,443 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;" &
                 read -p " [*] Escribe la Ip del Objetivo (Ej: 192.168.1.43): " Ip
                 read -p " [*] Escribe el puerto Objetivo (Ej: 80, 443): " puerto
                 sudo pkill gnome-terminal

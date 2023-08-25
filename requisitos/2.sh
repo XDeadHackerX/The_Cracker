@@ -36,7 +36,7 @@ read -p " [*] Elige una opcion: " opc1
                     case $opc1 in
                             1 ) echo
                                 read -p " [*] Escribe la Ip de Red + la Mascara (Ej: 192.168.1.0/24 o 128.0.0.0/16): " IpRed
-                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 21 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;"
+                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 21 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;" &
                                 read -p " [*] Escribe la Ip del Objetivo (Ej: 192.168.1.43): " Ip
                                 read -p " [*] Escribe el puerto Objetivo (Ej: 21): " puerto
                                 sudo pkill gnome-terminal
@@ -150,7 +150,7 @@ read -p " [*] Elige una opcion: " opc1
                     case $opc1 in
                             1 ) echo
                                 read -p " [*] Escribe la Ip de Red + la Mascara (Ej: 192.168.1.0/24 o 128.0.0.0/16): " IpRed
-                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 22 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;"
+                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 22 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;" &
                                 read -p " [*] Escribe la Ip del Objetivo (Ej: 192.168.1.43): " Ip
                                 read -p " [*] Escribe el puerto Objetivo (Ej: 22): " puerto
                                 sudo pkill gnome-terminal
@@ -264,7 +264,7 @@ read -p " [*] Elige una opcion: " opc1
                     case $opc1 in
                             1 ) echo
                                 read -p " [*] Escribe la Ip de Red + la Mascara (Ej: 192.168.1.0/24 o 128.0.0.0/16): " IpRed
-                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 23 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;"
+                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 23 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;" &
                                 read -p " [*] Escribe la Ip del Objetivo (Ej: 192.168.1.43): " Ip
                                 read -p " [*] Escribe el puerto Objetivo (Ej: 23): " puerto
                                 sudo pkill gnome-terminal
@@ -378,7 +378,7 @@ read -p " [*] Elige una opcion: " opc1
                     case $opc1 in
                             1 ) echo
                                 read -p " [*] Escribe la Ip de Red + la Mascara (Ej: 192.168.1.0/24 o 128.0.0.0/16): " IpRed
-                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 445 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;"
+                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 445 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;" &
                                 read -p " [*] Escribe la Ip del Objetivo (Ej: 192.168.1.43): " Ip
                                 read -p " [*] Escribe el puerto Objetivo (Ej: 445): " puerto
                                 sudo pkill gnome-terminal
@@ -492,7 +492,7 @@ read -p " [*] Elige una opcion: " opc1
                     case $opc1 in
                             1 ) echo
                                 read -p " [*] Escribe la Ip de Red + la Mascara (Ej: 192.168.1.0/24 o 128.0.0.0/16): " IpRed
-                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 3389 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;"
+                                sudo gnome-terminal --geometry 80x38+1300+20 -- bash -c "sudo nmap -Pn -T4 -p 3389 --open \"$IpRed\" | awk '/^Nmap scan report/{printf \"* %s\\n\", \$NF; next} 1'; sleep 999;" &
                                 read -p " [*] Escribe la Ip del Objetivo (Ej: 192.168.1.43): " Ip
                                 read -p " [*] Escribe el puerto Objetivo (Ej: 3389): " puerto
                                 sudo pkill gnome-terminal
