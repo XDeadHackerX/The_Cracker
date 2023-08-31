@@ -39,6 +39,7 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 	sudo apt-get install hydra -y
 	sudo apt-get install aircrack -y
 	sudo apt-get install gnome-terminal -y
+	sudo apt-get install dbus-x11 -y
 	sudo apt-get install aircrack-ng -y
 	sudo apt-get install python3 -y
 	sudo apt install git -y
