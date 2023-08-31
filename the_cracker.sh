@@ -4,10 +4,10 @@ source requisitos/0.sh
 
 Title
 echo "	           [#] Elige una de las siguientes opciones: "
-echo "	           ------------------------------------------------------------"
+echo "	           -------------------------------------------------------------"
 echo "	           [0]  Instalar Requisitos"
 echo "	           [1]  Desencriptar un Fichero (office .rar .zip .pdf)"
-echo "	           [2]  Desencriptar un Protocolo Online y Local (ftp, ssh, ...)"
+echo "	           [2]  Desencriptar un Protocolo Online y Local (ftp, ssh, ..)"
 echo "	           [3]  Desencriptar un Handshakes/Hash (Wifi)"
 echo "	           [4]  Desencriptar el Login de una IP Local (192.168.1.1:80)"
 echo "	           [5]  Crear diccionarios Personalizado"
