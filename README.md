@@ -6,6 +6,8 @@
 
 [![The-Cracker-1-1.png](https://i.postimg.cc/257nMdSR/The-Cracker-1-1.png)](https://postimg.cc/7CbCT2zm)
 
+<p>Vídeo Demo: <a href="#punto1">Pulse aquí</a> o <a href="https://asciinema.org/a/577885">aquí</a></p> 
+
 ---
 
 *Herramienta dirigida exclusivamente al uso de **Fuerza Bruta** y **Ataques de Diccionario** a varios tipos de Objetivos.* 
@@ -56,7 +58,7 @@
 
 **[3]** En caso de que tengas descargada una versión más antigua, te aconsejo borrarla y volver a instalar la herramienta (+requisitos) para solucionar errores y obtener mejoras, que hacen que la herramienta sea mucho mejor que las versiones anteriores.
 
-## 🎬 Videos 🎬
+## 🎬 Videos 🎬 <a name="punto1"></a>
 
 
 ### ZIP
